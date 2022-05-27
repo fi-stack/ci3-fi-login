@@ -43,13 +43,13 @@
         <?php foreach ($subMenu as $sm) : ?>
             <?php if ($title == $sm['title']) : ?>
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?= base_url($sm['url']) ?>">
+                    <a class="nav-link pb-0" href="<?= base_url($sm['url']) ?>">
                         <i class="<?= $sm['icon'] ?>"></i>
                         <span><?= $sm['title'] ?></span></a>
                 </li>
             <?php else : ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url($sm['url']) ?>">
+                    <a class="nav-link pb-0" href="<?= base_url($sm['url']) ?>">
                         <i class="<?= $sm['icon'] ?>"></i>
                         <span><?= $sm['title'] ?></span></a>
                 </li>
@@ -57,7 +57,7 @@
         <?php endforeach ?>
 
         <!-- Divider -->
-        <hr class="sidebar-divider">
+        <hr class="sidebar-divider mt-3">
     <?php endforeach ?>
 
     <!-- Nav Item - Logout -->
